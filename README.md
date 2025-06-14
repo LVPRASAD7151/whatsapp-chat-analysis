@@ -1,29 +1,29 @@
 # whatsapp-chat-analysis
 I worked on is a WhatsApp Chat Analyzer, which I built using Python and Streamlit. The idea behind the project was to take exported .txt chat files from WhatsApp and transform them into interactive visual insights using a clean web-based dashboard.
+
+
 My Approach:
-I divided the project into three core components:
+=>I divided the project into three core components:
 
-Preprocessing raw data – using regular expressions to extract dates, users, and messages accurately from the unstructured chat logs.
+1.Preprocessing raw data – using regular expressions to extract dates, users, and messages accurately from the unstructured chat logs.
 
-Data Analysis & Feature Engineering – I created new time-based features like day, month, hour, and message periods to enable timeline and heatmap visualizations.
+2.Data Analysis & Feature Engineering – I created new time-based features like day, month, hour, and message periods to enable timeline and heatmap visualizations.
 
-Frontend Dashboard – I used Streamlit to make the interface interactive, where users can upload files, choose specific participants, and view message/activity statistics dynamically.
-
-
-Tech Stack Used:
-Streamlit for frontend/UI
-
-Pandas for data handling
-
-Matplotlib and Seaborn for visualizations
-
-WordCloud for common word visualization
-
-URLExtract and Emoji libraries for link and emoji analysis
+3.Frontend Dashboard – I used Streamlit to make the interface interactive, where users can upload files, choose specific participants, and view message/activity statistics dynamically.
 
 
+=>Tech Stack Used:
+1.Streamlit for frontend/UI
 
-One of the projects I’m particularly proud of is a full-fledged WhatsApp Chat Analyzer that I developed using Python and Streamlit. The goal was to transform raw, unstructured WhatsApp chat exports into clean, insightful, and interactive visual analytics — almost like a personal communication dashboard.
+2.Pandas for data handling
+
+3.Matplotlib and Seaborn for visualizations
+
+4.WordCloud for common word visualization
+
+5.URLExtract and Emoji libraries for link and emoji analysis
+
+.
 
 To begin with, I built a preprocessing pipeline using regular expressions to parse chat timestamps, usernames, and messages. Since the data format can vary and often contains system messages or media placeholders like <Media omitted>, I implemented logic to handle those edge cases. After structuring the data into a DataFrame using pandas, I engineered several time-based features like daily and monthly message counts, day names, hours, and even specific time periods (like 10–11 AM), which later helped in detailed heatmap visualizations.
 
